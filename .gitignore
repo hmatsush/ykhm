@@ -11,3 +11,8 @@ Carthage/Build
 !**/*.xcodeproj/default.*
 *.xcworkspace/*
 !*.xcworkspace/contents.xcworkspacedata
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
