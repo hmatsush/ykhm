@@ -2,7 +2,7 @@ import UIKit
 import Foundation
 import PureLayout
 
-class ViewController: UIViewController {
+class HelloWorldViewController: UIViewController {
 
     // MARK: - Properties
 
@@ -49,9 +49,9 @@ class ViewController: UIViewController {
     /// このメソッドで各UI Elementsにテキストなどを設定する
     fileprivate func configureSubViews() {
         // NavigationControllerのテキストを設定
-        title = "テストページ"
+        title = "HelloWorld"
 
-        label.text = "テストページです"
+        label.text = "Hello World!"
     }
 
     // MARK: - applyStyles()
@@ -60,14 +60,14 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.white
 
         label.backgroundColor = UIColor.white
-        label.font = UIFont(name: "HiraKakuProN-W6", size: 40.0)
+        label.font = UIFont(name: "HiraKakuProN-W6", size: 20.0)
         label.textColor = UIColor.black
     }
 
     // MARK: - addConstraints()
     /// このメソッドで各UI ElementsにPureLayoutで制約を付ける
     fileprivate func addConstraints() {
-        label.autoPinEdge(toSuperviewEdge: .top, withInset: 100.0)
+        label.autoPinEdge(toSuperviewEdge: .top, withInset: 200.0)
         label.autoAlignAxis(.vertical, toSameAxisOf: view)
     }
 }

@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BA68E4531FB9C73A00A5CA1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68E4521FB9C73A00A5CA1C /* AppDelegate.swift */; };
-		BA68E4551FB9C73A00A5CA1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68E4541FB9C73A00A5CA1C /* ViewController.swift */; };
+		BA68E4551FB9C73A00A5CA1C /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68E4541FB9C73A00A5CA1C /* HelloWorldViewController.swift */; };
 		BA68E45A1FB9C73A00A5CA1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA68E4591FB9C73A00A5CA1C /* Assets.xcassets */; };
+		BA808FBA1FBB43B7006062B7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA808FB91FBB43B7006062B7 /* RootViewController.swift */; };
 		BAFA43061FB9F911000F72C1 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFA43051FB9F911000F72C1 /* PureLayout.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		BAFA430C1FB9FC77000F72C1 /* PureLayoutTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA430B1FB9FC77000F72C1 /* PureLayoutTemplateViewController.swift */; };
 		BAFA430E1FB9FE35000F72C1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA430D1FB9FE35000F72C1 /* main.swift */; };
@@ -18,9 +19,10 @@
 /* Begin PBXFileReference section */
 		BA68E44F1FB9C73A00A5CA1C /* ykhm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ykhm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA68E4521FB9C73A00A5CA1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA68E4541FB9C73A00A5CA1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA68E4541FB9C73A00A5CA1C /* HelloWorldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
 		BA68E4591FB9C73A00A5CA1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA68E45E1FB9C73A00A5CA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA808FB91FBB43B7006062B7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		BAFA43051FB9F911000F72C1 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 		BAFA430B1FB9FC77000F72C1 /* PureLayoutTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureLayoutTemplateViewController.swift; sourceTree = "<group>"; };
 		BAFA430D1FB9FE35000F72C1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 			path = ykhm;
 			sourceTree = "<group>";
 		};
+		BAE41A7B1FBB405E00D7D88B /* HelloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				BA68E4541FB9C73A00A5CA1C /* HelloWorldViewController.swift */,
+			);
+			path = HelloWorld;
+			sourceTree = "<group>";
+		};
 		BAFA43041FB9F911000F72C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +96,9 @@
 		BAFA43091FB9FC4C000F72C1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BAE41A7B1FBB405E00D7D88B /* HelloWorld */,
 				BAFA430A1FB9FC58000F72C1 /* TemplatePureLayout */,
-				BA68E4541FB9C73A00A5CA1C /* ViewController.swift */,
+				BA808FB91FBB43B7006062B7 /* RootViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -188,7 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA68E4551FB9C73A00A5CA1C /* ViewController.swift in Sources */,
+				BA808FBA1FBB43B7006062B7 /* RootViewController.swift in Sources */,
+				BA68E4551FB9C73A00A5CA1C /* HelloWorldViewController.swift in Sources */,
 				BAFA430C1FB9FC77000F72C1 /* PureLayoutTemplateViewController.swift in Sources */,
 				BAFA430E1FB9FE35000F72C1 /* main.swift in Sources */,
 				BA68E4531FB9C73A00A5CA1C /* AppDelegate.swift in Sources */,
