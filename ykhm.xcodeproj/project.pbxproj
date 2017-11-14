@@ -11,6 +11,11 @@
 		BA68E4551FB9C73A00A5CA1C /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68E4541FB9C73A00A5CA1C /* HelloWorldViewController.swift */; };
 		BA68E45A1FB9C73A00A5CA1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA68E4591FB9C73A00A5CA1C /* Assets.xcassets */; };
 		BA808FBA1FBB43B7006062B7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA808FB91FBB43B7006062B7 /* RootViewController.swift */; };
+		BA808FBD1FBB4626006062B7 /* RxSearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA808FBC1FBB4626006062B7 /* RxSearchBarController.swift */; };
+		BA808FBF1FBB4750006062B7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA808FBE1FBB4750006062B7 /* RxSwift.framework */; };
+		BA808FC11FBB475D006062B7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA808FC01FBB475D006062B7 /* RxCocoa.framework */; };
+		BA808FC31FBB476E006062B7 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA808FC21FBB476E006062B7 /* RxBlocking.framework */; };
+		BA808FC81FBB4927006062B7 /* SearchResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA808FC71FBB4927006062B7 /* SearchResultType.swift */; };
 		BAFA43061FB9F911000F72C1 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFA43051FB9F911000F72C1 /* PureLayout.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		BAFA430C1FB9FC77000F72C1 /* PureLayoutTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA430B1FB9FC77000F72C1 /* PureLayoutTemplateViewController.swift */; };
 		BAFA430E1FB9FE35000F72C1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA430D1FB9FE35000F72C1 /* main.swift */; };
@@ -23,6 +28,11 @@
 		BA68E4591FB9C73A00A5CA1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA68E45E1FB9C73A00A5CA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA808FB91FBB43B7006062B7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		BA808FBC1FBB4626006062B7 /* RxSearchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSearchBarController.swift; sourceTree = "<group>"; };
+		BA808FBE1FBB4750006062B7 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		BA808FC01FBB475D006062B7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		BA808FC21FBB476E006062B7 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		BA808FC71FBB4927006062B7 /* SearchResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultType.swift; sourceTree = "<group>"; };
 		BAFA43051FB9F911000F72C1 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 		BAFA430B1FB9FC77000F72C1 /* PureLayoutTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureLayoutTemplateViewController.swift; sourceTree = "<group>"; };
 		BAFA430D1FB9FE35000F72C1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -33,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA808FC31FBB476E006062B7 /* RxBlocking.framework in Frameworks */,
+				BA808FC11FBB475D006062B7 /* RxCocoa.framework in Frameworks */,
+				BA808FBF1FBB4750006062B7 /* RxSwift.framework in Frameworks */,
 				BAFA43061FB9F911000F72C1 /* PureLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +79,23 @@
 			path = ykhm;
 			sourceTree = "<group>";
 		};
+		BA808FBB1FBB45E7006062B7 /* RxSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				BA808FBC1FBB4626006062B7 /* RxSearchBarController.swift */,
+			);
+			path = RxSearchBar;
+			sourceTree = "<group>";
+		};
+		BA808FC61FBB48F2006062B7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BA808FBB1FBB45E7006062B7 /* RxSearchBar */,
+				BA808FC71FBB4927006062B7 /* SearchResultType.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		BAE41A7B1FBB405E00D7D88B /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +107,9 @@
 		BAFA43041FB9F911000F72C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA808FC21FBB476E006062B7 /* RxBlocking.framework */,
+				BA808FC01FBB475D006062B7 /* RxCocoa.framework */,
+				BA808FBE1FBB4750006062B7 /* RxSwift.framework */,
 				BAFA43051FB9F911000F72C1 /* PureLayout.framework */,
 			);
 			name = Frameworks;
@@ -96,9 +129,10 @@
 		BAFA43091FB9FC4C000F72C1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				BAE41A7B1FBB405E00D7D88B /* HelloWorld */,
-				BAFA430A1FB9FC58000F72C1 /* TemplatePureLayout */,
 				BA808FB91FBB43B7006062B7 /* RootViewController.swift */,
+				BAE41A7B1FBB405E00D7D88B /* HelloWorld */,
+				BA808FC61FBB48F2006062B7 /* Search */,
+				BAFA430A1FB9FC58000F72C1 /* TemplatePureLayout */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -185,6 +219,9 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 			);
 			outputPaths = (
 			);
@@ -200,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA808FBA1FBB43B7006062B7 /* RootViewController.swift in Sources */,
+				BA808FC81FBB4927006062B7 /* SearchResultType.swift in Sources */,
+				BA808FBD1FBB4626006062B7 /* RxSearchBarController.swift in Sources */,
 				BA68E4551FB9C73A00A5CA1C /* HelloWorldViewController.swift in Sources */,
 				BAFA430C1FB9FC77000F72C1 /* PureLayoutTemplateViewController.swift in Sources */,
 				BAFA430E1FB9FE35000F72C1 /* main.swift in Sources */,

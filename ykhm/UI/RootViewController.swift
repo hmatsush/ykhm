@@ -4,6 +4,7 @@ import PureLayout
 
 class RootViewController: UITabBarController {
     let helloVC = HelloWorldViewController()
+    let searchVC = RxSearchBarController()
 
     init(){
         super.init(nibName: nil, bundle: nil)
@@ -19,8 +20,9 @@ class RootViewController: UITabBarController {
         self.delegate = self
 
         let helloNC = UINavigationController(rootViewController: helloVC)
+        let searchNC = UINavigationController(rootViewController: searchVC)
 
-        let tabs = [helloNC]
+        let tabs = [helloNC, searchNC]
 
         self.setViewControllers(tabs, animated: false)
     }
@@ -29,11 +31,9 @@ class RootViewController: UITabBarController {
 extension RootViewController: UITabBarControllerDelegate{
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if (tabBarController.selectedIndex == 0) {
-            print("[Info] tap TabBarItem HomeViewController")
+            print("[Info] tap TabBarItem HelloWorld")
         } else if(tabBarController.selectedIndex == 1) {
-            print("[Info] tap TabBarItem SearchViewController")
-        } else if(tabBarController.selectedIndex == 2) {
-            print("[Info] tap TabBarItem CreateViewController")
+            print("[Info] tap TabBarItem Search")
         }
     }
 }
